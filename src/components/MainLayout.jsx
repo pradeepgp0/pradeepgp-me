@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="portfolio-background">
       <div className="intro-holder">
-        <div className="intro-short">Hey, I'm Pradeep.</div>
+        <div className="intro-short">Hey, I'm Pradeep GP.</div>
         <div className="intro-para">
           Senior Software Engineer at{" "}
           <a
