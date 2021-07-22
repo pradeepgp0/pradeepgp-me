@@ -15,12 +15,14 @@ jobs:
         run: npm install
   build:
     name: Git Build
+    needs: install
     runs-on: ubuntu-latest
     steps:
       - name: Build
         run: npm run build
   archive-upload:
     name: Git Archive Upload
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Archive dist
@@ -43,6 +45,7 @@ jobs:
           path: dist
   deploy:
     name: Firebase Deploy
+    needs: archive-download
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Firebase
