@@ -5,24 +5,33 @@ on:
       - main
 
 jobs:
-  build:
-    name: Git Build
+  install:
+    name: Git Install
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
         uses: actions/checkout@main
       - name: Install Dependencies
         run: npm install
+  build:
+    name: Git Build
+    runs-on: ubuntu-latest
+    steps:
       - name: Build
         run: npm run build
+  archive-upload:
+    name: Git Archive Upload
+    runs-on: ubuntu-latest
+    steps:
       - name: Archive dist
         uses: actions/upload-artifact@main
         with:
           name: dist
           path: dist
-  deploy:
-    name: Firebase Deploy
-    needs: build
+    
+  archive-download:
+    name: Git Archive Download 
+    needs: archive-upload
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
@@ -32,6 +41,10 @@ jobs:
         with:
           name: dist
           path: dist
+  deploy:
+    name: Firebase Deploy
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
