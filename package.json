@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "astro dev",
-    "deploy": "astro build && firebase deploy",
+    "build": "astro build",
     "pretty": "yarn prettier --write ."
   },
   "devDependencies": {
