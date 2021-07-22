@@ -1,0 +1,412 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: 0s !important;
+}
+
+.portfolio-background {
+  width: calc(100% - 60px);
+  min-height: 100vh;
+  background: #09172A;
+  color:#49AEA5;
+  padding: 30px;
+}
+
+.intro-short {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.intro-para {
+  color: #C7D1EE;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+a {
+  color:  #49AEA5;
+  text-decoration: underline !important;
+  text-underline-position: under !important;
+}
+
+.social-info-link {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.varun-img {
+  width: 30px;
+  height: 30px;
+}
+
+.fa-primary {
+  color:#C7D1EE!important;
+  font-size: 22px;
+}
+
+.fa-secondary {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.linkedin-icon {
+  margin-left: 18px;
+}
+
+.social-text-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.social-text-icon:first-child {
+  margin-right: 5px;
+}
+
+.social-text {
+  margin-left: 10px;
+  color: #939DB9;
+  font-size: 16px;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.section {
+  margin-top: 80px;
+}
+
+.section-card-holder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.section-card {
+  background-color: #162A46;
+  margin: 10px 0 20px 0;
+  width: calc(100% - 80px);
+  min-height: 60px;
+  padding: 40px;
+  position: relative;
+}
+
+.company {
+  font-size: 17px;
+  font-weight: 800;
+  
+}
+
+.position {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 12px;
+  color: #C7D1EE;
+}
+
+.period {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 5px;
+  color: #C7D1EE;
+}
+
+.developer {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 5px;
+  color: #C7D1EE;
+}
+
+.years {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 12px;
+  color: #C7D1EE;
+}
+
+.count {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(153, 165, 189);
+  color: #0A192F;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.section-langs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lang-icons-width {
+  width: calc(24vw - 25px);
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.css {
+  width: calc(24vw - 18px);
+  margin-bottom: 20px;
+}
+
+.html {
+  width: calc(22vw - 18px);
+  margin-top: 2px;
+}
+
+.project {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.lang {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 12px;
+  color: #C7D1EE;
+}
+
+.desc {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 12px;
+  color: #C7D1EE;
+}
+
+.links {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 25px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fa-envelope {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.footer {
+  padding-top: 40px !important;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: -10px;
+}
+
+.astro {
+  transform: translateX(2.5vw);
+}
+
+img {
+  pointer-events: none;
+}
+
+.lang-link {
+  color: #C7D1EE;
+}
+
+.email {
+  font-size: 17px;
+}
+
+@media only screen and (min-width: 700px) {
+  .portfolio-background {
+    display: flex;
+    max-width: 100vw !important;
+  }
+  .intro-holder {
+    position: fixed;
+    padding-left: 20px;
+    max-width: calc(50vw - 80px) !important;
+    min-height: 100vh !important;
+    max-height: calc(100vh - 100px) !important;
+  }
+  .section-outer-holder {
+    margin-left: calc(50% + 30px) !important;
+    max-width: 50% !important;
+  }
+  .section-card {
+    width: calc(50vw - 140px);
+  }
+  .footer {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .lang-icons-width {
+    width: 8vw;
+    margin: 0 1.3vw;
+    margin-bottom: 20px;
+  }
+  .section-langs {
+    padding-right: 10px;
+  }
+  .astro {
+    transform: translateX(1vw);
+  }
+  .intro-short {
+    font-size: 3.8vw;
+  }
+  .intro-para {
+    font-size: 1.8vw;
+  }
+  .fa-primary {
+    font-size: 1.8vw;
+  }
+  .fa-secondary {
+    font-size: 1.3vw;
+    margin-right: 10px;
+  }
+  .social-text {
+    font-size: 1.6vw;
+  }
+  .footer {
+    font-size: 1.8vw;
+  }
+  .company {
+    font-size: 1.8vw;
+  }
+  .project {
+    font-size: 1.8vw;
+  }
+  .section-heading {
+    font-size: 2vw;
+  }
+  .lang {
+    font-size: 1.4vw;
+  }
+  .desc {
+    font-size: 1.5vw;
+  }
+  .links {
+    font-size: 1.5vw;
+  }
+  .section:first-child {
+    margin-top: 35px;
+  }
+  .position {
+    font-size: 1.4vw;
+  }
+
+  .period {
+    font-size: 1.4vw;
+  }
+
+  .developer {
+    font-size: 1.4vw;
+  }
+
+  .years {
+    font-size: 1.4vw;
+  }
+  .count {
+    width: 1.5vw;
+    height: 1.5vw;
+    font-size: 1vw;
+  }
+  .css {
+    width: calc(10vw - 18px);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .astro {
+    transform: translateX(1vw);
+  }
+  .intro-short {
+    font-size: 3vw;
+  }
+  .intro-para {
+    font-size: 1.1vw;
+  }
+  .fa-primary {
+    font-size: 1.5vw;
+  }
+  .fa-secondary {
+    font-size: 1.1vw;
+  }
+  .social-text {
+    font-size: 1.3vw;
+  }
+  .footer {
+    font-size: 1.2vw;
+  }
+  .company {
+    font-size: 1.2vw;
+  }
+  .project {
+    font-size: 1.6vw;
+  }
+  .section-heading {
+    font-size: 1.5vw;
+  }
+  .lang {
+    font-size: 1vw;
+  }
+  .desc {
+    font-size: 1.1vw;
+  }
+  .links {
+    font-size: 1.1vw;
+  }
+  .contact {
+    margin-bottom: 20px;
+  }
+  .position {
+    font-size: 1.1vw;
+  }
+
+  .period {
+    font-size: 1vw;
+  }
+
+  .developer {
+    font-size: 1vw;
+  }
+
+  .years {
+    font-size: 1vw;
+  }
+  .project {
+    font-size: 1.4vw;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .intro-para {
+    font-size: 1.3vw;
+  }
+}
